@@ -1,10 +1,11 @@
 header {
     background-color: $light-blue;
-    min-height: 12vh;
+    display: block;
 }
 
 nav {
     width: 100%;
+    margin: 0 2.5rem;
 }
 
 ul {
@@ -13,7 +14,9 @@ ul {
 
 .nav-mini-list {
     font-size: 0.7rem;
-    padding-top: 1rem;
+    padding: 0;
+    position: absolute;
+    top: 1%;
 
     li {
         padding: 0 0.9rem;
@@ -40,7 +43,7 @@ ul {
 .nav-main-list {
     display: flex;
     align-items: center;
-    margin-top: 0.5rem;
+    padding: 1.5rem 0;
 }
 
 .logo {
@@ -134,7 +137,7 @@ ul {
         width: 100%;
         display: block;
         position: absolute;
-        top: 8rem;
+        top: 5rem;
         left: 0;
         background: $light-black;
         border-top: solid 1px $red;
