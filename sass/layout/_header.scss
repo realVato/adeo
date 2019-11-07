@@ -3,6 +3,7 @@ header {
     min-height: 12vh;
 
     nav {
+        width: 100%;
 
         ul {
             display: flex;
@@ -107,7 +108,52 @@ header {
 
             li.nav-toggle {
                 display: none;
+                margin: 1rem;
             }
         }
     }
+}
+
+@media screen and (max-width: 1013px) {
+    header {
+        display: flex;
+        align-items: center;
+    }
+
+    header > nav > ul.nav-mini-list,
+    header > nav > ul.nav-main-list > div.responsive-nav {
+        display: none;
+    }
+
+    header > nav > ul.nav-main-list {
+        margin-top: 0;
+    }
+
+    header > nav > ul.nav-main-list > li.nav-toggle {
+        display: block;
+        font-size: 2rem;
+        color: $white;
+    }
+
+    header > nav > ul.nav-main-list > div.responsive-nav.openup {
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 8rem;
+        left: 0;
+        
+        background: $light-black;
+        border-top: solid 1px red;
+
+        li {
+            display: block;
+            
+        }
+
+        a {
+            color: $white;
+            padding: 2.8rem;
+        }
+    }
+
 }
