@@ -1,0 +1,113 @@
+header {
+    background-color: $light-blue;
+    min-height: 12vh;
+
+    nav {
+
+        ul {
+            display: flex;
+        }
+
+        ul.nav-mini-list {
+            font-size: 0.7rem;
+            padding-top: 1rem;
+
+            li {
+                padding: 0 0.9rem;
+                border-right: 1px solid $white;
+
+                a {
+                    color: $dark-white;
+                }
+
+                a:hover {
+                    color: $light-black;
+                }
+            }
+
+            li:nth-child(first) {
+                padding-left: 0;
+            }
+
+            li:nth-last-child(1) {
+                border-right: none;
+            }
+        }
+
+        ul.nav-main-list {
+            display: flex;
+            align-items: center;
+            margin-top: 0.5rem;
+
+            li.logo {
+                font-size: 2rem;
+                padding-left: 0.9rem;
+                margin-right: auto;
+
+                span.slim-font {
+                    font-weight: 300;
+                    letter-spacing: -0.03rem;
+                    color: $dark-white;
+                }
+            }
+
+            div.responsive-nav {
+                display: flex;
+                align-items: center;
+                margin-right: 4rem;
+                
+                li {
+                    padding: 0.9rem;
+                }
+
+                li.dropdown {
+
+                    div.dropdown-container {
+                        display: none;
+                        top: 0.4rem;
+
+                        div.dropdown-triangle {
+                        position: absolute;
+                        height: 1.25rem;
+                        width: 1.25rem;
+                        margin: 0 auto;
+                        background-color: $light-black;
+                        transform: rotate(45deg);
+                        }
+
+                        div.dropdown-content {
+                            position: absolute;
+                            background-color: $light-black;
+                            margin-top: 0.5rem;
+                            min-width: 160px;
+                            z-index: 1;
+
+                            a {
+                                color: $white;
+                                margin: 0.3rem;
+                                padding: 0.75rem 1rem;
+                                text-decoration: none;
+                                display: block;
+                            }
+
+                            a:hover {
+                                color: $light-black;
+                                background-color: $white;
+                            } 
+                        }
+                    }
+                }
+
+                li.dropdown:hover .dropdown-container {
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                }
+            }
+
+            li.nav-toggle {
+                display: none;
+            }
+        }
+    }
+}
