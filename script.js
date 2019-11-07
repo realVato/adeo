@@ -11,7 +11,7 @@ function toggleNavDisplay(e) {
     // Get NAV
     var responsiveNav = document.getElementById("responsive-nav");
 
-    // Toggle reponsive NAV on fa-bars click
+    // Toggle responsive NAV on fa-bars click
     responsiveNav.classList.toggle("openup");
 }
 

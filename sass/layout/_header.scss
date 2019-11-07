@@ -43,11 +43,11 @@ ul {
 .nav-main-list {
     display: flex;
     align-items: center;
-    padding: 1.5rem 0;
+    padding: 2rem 0;
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-left: 0.9rem;
     margin-right: auto;
 
@@ -137,7 +137,7 @@ ul {
         width: 100%;
         display: block;
         position: absolute;
-        top: 5rem;
+        top: 6rem;
         left: 0;
         background: $light-black;
         border-top: solid 1px $red;
