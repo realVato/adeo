@@ -8,6 +8,20 @@
     margin-top: 4rem;
 }
 
+.send-btn {
+    padding: 0.25rem;
+    border: 3px solid $light-blue;
+    max-width: 60px;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0.5rem;
+
+    a {
+        color: $light-blue;
+        font-weight: 900;
+    }
+}
+
 @media screen and (max-width: 1013px) {
     .learnMore-btn {
         margin: auto;

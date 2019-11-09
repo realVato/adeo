@@ -61,7 +61,7 @@
     }
 }
 
-// WEB DEVELOPMENT 
+// WEB DEV & LISTS
 .web-dev-lists-container {
     display: flex;
     background-color: $light-blue;
@@ -124,5 +124,57 @@
 
     .list-description {
         width: 50%;
+    }
+}
+
+// CONTACT
+.contact-main-container {
+    width: 70%;
+    margin: auto;
+    padding: 2rem 6rem;
+}
+
+.contact-heading {
+    h1 {
+        color: $black;
+        font-weight: 900;
+    }
+
+    hr {
+        height: 0.5rem;
+        max-width: 3rem;
+        background-color: $light-black;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+}
+
+.contact-container {
+    display: flex;
+}
+
+.contact-description {
+    width: 50%;
+    margin-right: 5rem;
+
+    p {
+        color: $black;
+        padding-right: 1rem;
+    }
+}
+
+.contact-form {
+    form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-weight: 900;
+            color: $light-black;
+        }
+
+        input, textarea {
+            margin: 0.8rem 0;
+        }
     }
 }
