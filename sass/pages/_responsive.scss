@@ -7,13 +7,13 @@
 
 //Showcase --------------
 @media screen and (max-width: 1300px) {
-    .welcome > .wrapper > span {
+    .welcome>.wrapper>span {
         font-size: 1.8rem;
     }
 }
 
 @media screen and (max-width: 1180px) {
-    .welcome > .wrapper > span {
+    .welcome>.wrapper>span {
         font-size: 1.3rem;
     }
 }
@@ -44,5 +44,25 @@
     .design {
         width: 100%;
         margin: 0;
+    }
+}
+
+// WEB DEV & LISTS --------------------
+@media screen and (max-width: 1013px) {
+    .web-dev-lists-container {
+        flex-direction: column;
+    }
+
+    .web-dev-description {
+        width: 100%;
+    }
+
+    .wireframe-list-container {
+        width: 100%;
+        margin: 2rem 0 0 0;
+    }
+
+    .wireframe {
+        padding: 0;
     }
 }
