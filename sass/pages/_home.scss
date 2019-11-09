@@ -3,8 +3,58 @@
     margin: auto;
 }
 
-@media screen and (max-width: 1013px) {
-    .main-container {
+.showcase {
+    display: flex;
+    margin: 3.5rem 3rem 3.5rem 6rem;
+}
+
+.welcome {
+    background-color: $light-blue;
+    width: 25%;
+    padding: 2rem 2rem;
+
+    .wrapper {
+
+        span {
+            font-size: 2rem;
+            color: $white;
+        }
+
+        hr {
+            height: 0.5rem;
+            max-width: 3rem;
+            background-color: $white;
+            margin-top: 1rem;
+            margin-left: 0;
+        }
+
+        p {
+            padding-right: 4rem;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+    }
+}
+
+.design {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 9rem;
+
+    .design-image > img {
         width: 100%;
+        vertical-align: bottom;
+    }
+
+    .design-description {
+        background-color: $dark-white;
+        padding: 2rem 4rem;
+        font-weight: 900;
+        
+        p {
+            color: $black;
+            font-weight: 400;
+        }
     }
 }
