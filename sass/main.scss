@@ -1,23 +1,21 @@
 @charset 'utf-8';
 
-// 1. Variables
-@import 'variables/variables';
+// 1. Abstracts
+@import 'abstracts/variables';
 
-// 2. Tools
-@import 'tools/normalize';
-
-// 3. Base
+// 2. Base
 @import 'base/base',
+'base/normalize',
 'base/typography';
 
-// 4. Layout
+// 3. Layout
 @import 'layout/header',
 'layout/form',
 'layout/footer';
 
-// 5. Components
+// 4. Components
 @import 'components/buttons';
 
-// 6. Pages
+// 5. Pages
 @import 'pages/home',
 'pages/responsive';
