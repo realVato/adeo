@@ -8,14 +8,16 @@
 'base/normalize',
 'base/typography';
 
-// 3. Layout
-@import 'layout/header',
-'layout/form',
-'layout/footer';
+// 3. Components
+@import 'components/buttons',
+'components/dropdown';
 
-// 4. Components
-@import 'components/buttons';
+// 4. Layout
+@import 'layout/contact',
+'layout/customLists',
+'layout/footer',
+'layout/header',
+'layout/showcase';
 
 // 5. Pages
-@import 'pages/home',
-'pages/responsive';
+@import 'pages/home';
